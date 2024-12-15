@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blockchain API</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2a3c9d;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 1rem 0;
+        }
+
+        li strong {
+            font-weight: 600;
+            color: #e76f51;
+        }
+
+        /* Button styling */
+        a.button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-top: 20px;
+            background-color: #2a3c9d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a.button:hover {
+            background-color: #25358a;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⛓️ PKO's Blockchain API</h1>
+        <p>Використовуйте наведені нижче кінцеві точки API для взаємодії з блокчейном. Додавайте транзакції, видобувайте блоки та переглядайте поточний блокчейн.</p>
+        <ul>
+            <li><strong>POST /transactions/new:</strong> Додати нову транзакція</li>
+            <li><strong>GET /mine:</strong> Почати видобуток нового блоку</li>
+            <li><strong>GET /chain:</strong> Отримати json поточного блокчейну</li>
+        </ul>
+        <a href="/chain" class="button">Переглянути блокчейн</a>
+        <footer>Kyryl Petrachyk &copy; 2024</footer>
+    </div>
+</body>
+</html>
